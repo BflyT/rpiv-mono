@@ -1,6 +1,6 @@
 # Install the todo status fork with Pi
 
-This branch packages the existing `feat/todo-failure-and-user-handoff` changes as a Git-installable Pi package. The root `pi` manifest loads **only** `packages/rpiv-todo/index.ts`; other monorepo extensions are not loaded. The upstream workspace structure and dependency lockfile are retained.
+This branch packages the existing `feat/todo-failure-and-user-handoff` changes as a Git-installable Pi package. The root `pi` manifest loads **only** `packages/rpiv-todo/index.ts`; other monorepo extensions are not loaded. The upstream workspace structure and dependency lockfile are retained. The development-only `prepare: husky` hook is omitted on this installation branch because Pi installs Git packages with `npm install --omit=dev`, where Husky is unavailable.
 
 ```sh
 pi install git:github.com/BflyT/rpiv-mono@pi-todo-install

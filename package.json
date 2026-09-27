@@ -27,8 +27,7 @@
 		"publish:dry": "npm run prepublishOnly && npm publish -ws --access public --dry-run",
 		"release:patch": "node scripts/release.mjs patch",
 		"release:minor": "node scripts/release.mjs minor",
-		"release:major": "node scripts/release.mjs major",
-		"prepare": "husky"
+		"release:major": "node scripts/release.mjs major"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.5",
